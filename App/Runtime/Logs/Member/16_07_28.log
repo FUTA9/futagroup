@@ -1,0 +1,720 @@
+[ 2016-07-28T00:24:29+08:00 ] ::1 /group/Member/Index/getRecentView
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0070s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0010s ]
+
+[ 2016-07-28T10:39:24+08:00 ] ::1 /group/Member/Cart/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0000s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_user_address` [ RunTime:0.0468s ]
+SQL: SELECT * FROM `gr_user_address` WHERE `user_id` = '1'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `gr_cart` [ RunTime:0.0468s ]
+SQL: SELECT goods.main_title AS main_title,goods.gid AS gid,goods.goods_img AS goods_img,goods.price AS price,goods.end_time AS end_time,cart.cart_id AS cart_id,cart.goods_num AS goods_num FROM gr_goods goods INNER JOIN gr_cart cart ON goods.gid = cart.goods_id WHERE `user_id` = '1'  [ RunTime:0.0000s ]
+
+[ 2016-07-28T10:39:25+08:00 ] ::1 /group/Member/Index/getRecentView
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0000s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+
+[ 2016-07-28T10:39:32+08:00 ] ::1 /group/Member/Cart/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0000s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_user_address` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `gr_user_address` WHERE `user_id` = '1'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `gr_cart` [ RunTime:0.0000s ]
+SQL: SELECT goods.main_title AS main_title,goods.gid AS gid,goods.goods_img AS goods_img,goods.price AS price,goods.end_time AS end_time,cart.cart_id AS cart_id,cart.goods_num AS goods_num FROM gr_goods goods INNER JOIN gr_cart cart ON goods.gid = cart.goods_id WHERE `user_id` = '1'  [ RunTime:0.0000s ]
+
+[ 2016-07-28T10:39:34+08:00 ] ::1 /group/Member/Reg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0156s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\913babdecbb02be8feb8fce345e1914e.php 第 125 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Member\913babdecbb02be8feb8fce345e1914e.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\913babdecbb02be8feb8fce345e1914e.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\913babdecbb02be8feb8fce345e1914e.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.156000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-28T10:39:34+08:00 ] ::1 /group/Member/Reg/showCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0312s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-28T10:39:42+08:00 ] ::1 /group/Member/Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0000s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Member\Model\OrderViewModel::checkOrder() should be compatible with that of Think\Model\ViewModel::checkOrder() C:\WWW\group\App\Member\Model\OrderViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_order` [ RunTime:0.1248s ]
+SQL: SELECT * FROM `gr_order` INNER JOIN gr_goods ON gr_goods.gid = gr_order.goods_id  WHERE `user_id` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\e492bdd6a80794188c8e87210607f2f2.php 第 125 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Member\e492bdd6a80794188c8e87210607f2f2.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\e492bdd6a80794188c8e87210607f2f2.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\e492bdd6a80794188c8e87210607f2f2.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.202801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.202801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-28T10:39:47+08:00 ] ::1 /group/Member/Index/getRecentView
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0000s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+
+[ 2016-07-28T10:40:07+08:00 ] ::1 /group/Member/Cart/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0000s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_user_address` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `gr_user_address` WHERE `user_id` = '1'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_cart` [ RunTime:0.0156s ]
+SQL: SELECT goods.main_title AS main_title,goods.gid AS gid,goods.goods_img AS goods_img,goods.price AS price,goods.end_time AS end_time,cart.cart_id AS cart_id,cart.goods_num AS goods_num FROM gr_goods goods INNER JOIN gr_cart cart ON goods.gid = cart.goods_id WHERE `user_id` = '1'  [ RunTime:0.0000s ]
+
+[ 2016-07-28T10:40:18+08:00 ] ::1 /group/Member/Buy/index/gid/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_user_address` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `gr_user_address` WHERE `user_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `gr_goods` WHERE `gid` = 17 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 125 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.171600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.171600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-28T10:40:20+08:00 ] ::1 /group/Member/Buy/index/gid/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_user_address` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `gr_user_address` WHERE `user_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `gr_goods` WHERE `gid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 125 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-28T10:40:21+08:00 ] ::1 /group/Member/Buy/index/gid/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_user_address` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `gr_user_address` WHERE `user_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `gr_goods` WHERE `gid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 125 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-28T10:40:22+08:00 ] ::1 /group/Member/Buy/index/gid/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_user_address` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `gr_user_address` WHERE `user_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `gr_goods` WHERE `gid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015600s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015600s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 125 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-28T10:40:26+08:00 ] ::1 /group/Member/Buy/index/gid/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_user_address` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `gr_user_address` WHERE `user_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `gr_goods` WHERE `gid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 125 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\60a313264ff04d345f683e81b808ffee.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-28T10:40:30+08:00 ] ::1 /group/Member/Buy/payMent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Member\Model\OrderViewModel::checkOrder() should be compatible with that of Think\Model\ViewModel::checkOrder() C:\WWW\group\App\Member\Model\OrderViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_order` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gr_order` WHERE `user_id` = 1 AND `goods_id` = 17 AND `status` = 1 LIMIT 1   [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `gr_order` [ RunTime:0.0000s ]
+SQL: INSERT INTO `gr_order` (`user_id`,`goods_id`,`goods_num`,`addressid`,`total_money`) VALUES ('1','17','5','12','335') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `gr_order` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `gr_order` INNER JOIN gr_goods ON gr_goods.gid = gr_order.goods_id  WHERE `user_id` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 171 行.
+SQL: SHOW COLUMNS FROM `gr_userinfo` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `gr_userinfo` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\b1fe4b77fb5d2f5809de86b602a7f66a.php 第 125 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Member\b1fe4b77fb5d2f5809de86b602a7f66a.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\b1fe4b77fb5d2f5809de86b602a7f66a.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\b1fe4b77fb5d2f5809de86b602a7f66a.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-28T10:40:33+08:00 ] ::1 /group/Member/Buy/checkBuy
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Member\Model\OrderViewModel::checkOrder() should be compatible with that of Think\Model\ViewModel::checkOrder() C:\WWW\group\App\Member\Model\OrderViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_order` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `gr_order` INNER JOIN gr_goods ON gr_goods.gid = gr_order.goods_id  WHERE `orderid` IN ('100')  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 171 行.
+SQL: SHOW COLUMNS FROM `gr_userinfo` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `gr_userinfo` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `gr_order` [ RunTime:0.0000s ]
+SQL: UPDATE `gr_order` SET `status`='2' WHERE `orderid` IN ('100') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `gr_userinfo` [ RunTime:0.0156s ]
+SQL: UPDATE `gr_userinfo` SET `balance`=balance-335 WHERE `user_id` = 1 [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0000s ]
+SQL: UPDATE `gr_goods` SET `buy`=buy+1 WHERE `gid` = 17 [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `gr_cart` [ RunTime:0.0000s ]
+SQL: DELETE FROM `gr_cart` WHERE `user_id` = 1 [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\fc84ceabda2e69a861657d343d8cafc2.php 第 125 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Member\fc84ceabda2e69a861657d343d8cafc2.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\fc84ceabda2e69a861657d343d8cafc2.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\fc84ceabda2e69a861657d343d8cafc2.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-07-28T10:40:35+08:00 ] ::1 /group/Member/Cart/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0156s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_user_address` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `gr_user_address` WHERE `user_id` = '1'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_cart` [ RunTime:0.0156s ]
+SQL: SELECT goods.main_title AS main_title,goods.gid AS gid,goods.goods_img AS goods_img,goods.price AS price,goods.end_time AS end_time,cart.cart_id AS cart_id,cart.goods_num AS goods_num FROM gr_goods goods INNER JOIN gr_cart cart ON goods.gid = cart.goods_id WHERE `user_id` = '1'  [ RunTime:0.0000s ]
+
+[ 2016-07-28T10:40:35+08:00 ] ::1 /group/Member/Index/getRecentView
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0000s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0156s ]
+SQL: SELECT `main_title`,`price`,`gid`,`old_price`,`goods_img`,`end_time` FROM `gr_goods` WHERE `gid` IN (0,17)  [ RunTime:0.0000s ]
+
+[ 2016-07-28T10:40:37+08:00 ] ::1 /group/Member/Account/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_userinfo` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `gr_userinfo` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\08f00b84b17e3ab24ed8628f39cc9efb.php 第 125 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Member\08f00b84b17e3ab24ed8628f39cc9efb.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\08f00b84b17e3ab24ed8628f39cc9efb.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\08f00b84b17e3ab24ed8628f39cc9efb.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-07-28T10:40:40+08:00 ] ::1 /group/Member/Account/addBalance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_userinfo` [ RunTime:0.0000s ]
+SQL: UPDATE `gr_userinfo` SET `balance`=balance+10000 WHERE `user_id` = 1 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-28T10:40:42+08:00 ] ::1 /group/Member/Account/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_userinfo` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `gr_userinfo` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\08f00b84b17e3ab24ed8628f39cc9efb.php 第 125 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Member\08f00b84b17e3ab24ed8628f39cc9efb.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\08f00b84b17e3ab24ed8628f39cc9efb.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\08f00b84b17e3ab24ed8628f39cc9efb.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-28T10:40:50+08:00 ] ::1 /group/Member/Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Member\Model\OrderViewModel::checkOrder() should be compatible with that of Think\Model\ViewModel::checkOrder() C:\WWW\group\App\Member\Model\OrderViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_order` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `gr_order` INNER JOIN gr_goods ON gr_goods.gid = gr_order.goods_id  WHERE `user_id` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015600s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015600s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\e492bdd6a80794188c8e87210607f2f2.php 第 125 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Member\e492bdd6a80794188c8e87210607f2f2.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\e492bdd6a80794188c8e87210607f2f2.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\e492bdd6a80794188c8e87210607f2f2.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-28T10:40:54+08:00 ] ::1 /group/Member/Index/collect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.015600s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0000s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `gr_collect` [ RunTime:0.0312s ]
+SQL: SELECT goods.main_title AS main_title,goods.goods_img AS goods_img,goods.price AS price,goods.end_time AS end_time,goods.gid AS gid FROM gr_goods goods INNER JOIN gr_collect collect ON goods.gid = collect.goods_id WHERE collect.user_id = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015600s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015600s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\264840e640667045282df58c8a8216b1.php 第 125 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Member\264840e640667045282df58c8a8216b1.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\264840e640667045282df58c8a8216b1.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\264840e640667045282df58c8a8216b1.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-07-28T10:40:58+08:00 ] ::1 /group/Member/Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Member\Model\OrderViewModel::checkOrder() should be compatible with that of Think\Model\ViewModel::checkOrder() C:\WWW\group\App\Member\Model\OrderViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_order` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `gr_order` INNER JOIN gr_goods ON gr_goods.gid = gr_order.goods_id  WHERE `user_id` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015600s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015600s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\e492bdd6a80794188c8e87210607f2f2.php 第 125 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Member\e492bdd6a80794188c8e87210607f2f2.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\e492bdd6a80794188c8e87210607f2f2.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\e492bdd6a80794188c8e87210607f2f2.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-07-28T10:41:27+08:00 ] ::1 /group/Member/Cart/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0060s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_user_address` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gr_user_address` WHERE `user_id` = '1'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gr_cart` [ RunTime:0.0070s ]
+SQL: SELECT goods.main_title AS main_title,goods.gid AS gid,goods.goods_img AS goods_img,goods.price AS price,goods.end_time AS end_time,cart.cart_id AS cart_id,cart.goods_num AS goods_num FROM gr_goods goods INNER JOIN gr_cart cart ON goods.gid = cart.goods_id WHERE `user_id` = '1'  [ RunTime:0.0010s ]
+
+[ 2016-07-28T10:42:24+08:00 ] ::1 /group/Member/Cart/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0080s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_user_address` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gr_user_address` WHERE `user_id` = '1'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gr_cart` [ RunTime:0.0070s ]
+SQL: SELECT goods.main_title AS main_title,goods.gid AS gid,goods.goods_img AS goods_img,goods.price AS price,goods.end_time AS end_time,cart.cart_id AS cart_id,cart.goods_num AS goods_num FROM gr_goods goods INNER JOIN gr_cart cart ON goods.gid = cart.goods_id WHERE `user_id` = '1'  [ RunTime:0.0010s ]
+
+[ 2016-07-28T12:26:50+08:00 ] ::1 /group/Member/Index/getRecentView
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0000s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+
+[ 2016-07-28T12:26:51+08:00 ] ::1 /group/Member/Cart/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0000s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_user_address` [ RunTime:0.0624s ]
+SQL: SELECT * FROM `gr_user_address` WHERE `user_id` = '1'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_cart` [ RunTime:0.0624s ]
+SQL: SELECT goods.main_title AS main_title,goods.gid AS gid,goods.goods_img AS goods_img,goods.price AS price,goods.end_time AS end_time,cart.cart_id AS cart_id,cart.goods_num AS goods_num FROM gr_goods goods INNER JOIN gr_cart cart ON goods.gid = cart.goods_id WHERE `user_id` = '1'  [ RunTime:0.0000s ]
+
+[ 2016-07-28T12:26:52+08:00 ] ::1 /group/Member/Login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0000s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-28T12:26:55+08:00 ] ::1 /group/Member/Cart/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: uid C:\WWW\group\App\Member\Controller\CartController.class.php 第 23 行.
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_user_address` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `gr_user_address` WHERE `user_id` = null  [ RunTime:0.0000s ]
+
+[ 2016-07-28T12:26:55+08:00 ] ::1 /group/Member/Index/getRecentView
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: uid C:\WWW\group\App\Member\Controller\IndexController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: uid C:\WWW\group\App\Member\Controller\IndexController.class.php 第 17 行.
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+
+[ 2016-07-28T14:44:26+08:00 ] ::1 /group/Member/Buy/index/gid/60
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-28T14:44:28+08:00 ] ::1 /group/Member/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: uid C:\WWW\group\App\Member\Controller\LoginController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0000s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: loginShow C:\WWW\group\App\Runtime\Cache\Member\bd27b8ba6481c4a609fc34eb7743d92f.php 第 103 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\bd27b8ba6481c4a609fc34eb7743d92f.php 第 125 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Member\bd27b8ba6481c4a609fc34eb7743d92f.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\bd27b8ba6481c4a609fc34eb7743d92f.php 第 125 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Member\bd27b8ba6481c4a609fc34eb7743d92f.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.202800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.202800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-28T14:44:48+08:00 ] ::1 /group/Member/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: uid C:\WWW\group\App\Member\Controller\LoginController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0050s ]
+SQL: SELECT `cname`,`cid` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort asc LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Member\Model\UserViewModel::check() should be compatible with that of Think\Model::check() C:\WWW\group\App\Member\Model\UserViewModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `gr_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `gr_user` WHERE `uname` = 'user123' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

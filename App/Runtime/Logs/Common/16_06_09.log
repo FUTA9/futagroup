@@ -1,0 +1,66 @@
+[ 2016-06-09T09:05:58+08:00 ] ::1 /group/index.php/group/App/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Group
+
+[ 2016-06-09T12:50:14+08:00 ] ::1 /group/index.php/Data/bootstrap/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Data
+
+[ 2016-06-09T12:50:14+08:00 ] ::1 /group/index.php/Data/bootstrap/css/bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Data
+
+[ 2016-06-09T13:09:27+08:00 ] ::1 /group/index.php/Data/bootstrap/css/bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Data
+
+[ 2016-06-09T13:09:27+08:00 ] ::1 /group/index.php/Data/bootstrap/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Data
+
+[ 2016-06-09T13:09:29+08:00 ] ::1 /group/index.php/Data/bootstrap/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Data
+
+[ 2016-06-09T13:09:29+08:00 ] ::1 /group/index.php/Data/bootstrap/css/bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Data
+
+[ 2016-06-09T13:09:29+08:00 ] ::1 /group/index.php/Data/bootstrap/css/bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Data
+
+[ 2016-06-09T13:09:29+08:00 ] ::1 /group/index.php/Data/bootstrap/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载模块:Data
+
+[ 2016-06-09T13:10:21+08:00 ] ::1 /group/index.php/Data/bootstrap/css/bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:Data
+
+[ 2016-06-09T13:10:21+08:00 ] ::1 /group/index.php/Data/bootstrap/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Data
+

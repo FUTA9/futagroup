@@ -1,0 +1,60 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="/group/Data/bootstrap/css/bootstrap.css" />
+    <script type="text/javascript" src='/group/Data/bootstrap/js/bootstrap.js'></script>
+
+<script type="text/javascript">
+      window.UEDITOR_HOME_URL='/group/Data/ueditor/'; 
+      window.onload = function () {
+          window.UEDITOR_CONFIG.initialFrameHeight = 300;
+          window.UEDITOR_CONFIG.initialFrameWidth = 1145;
+          UE.getEditor('content');
+      }
+  </script>
+  <script type="text/javascript" src="/group/Data/ueditor/ueditor.config.js"></script>
+  <script type="text/javascript" src="/group/Data/ueditor/ueditor.all.min.js"></script>
+<title>添加分类</title>
+</head>
+<body>
+<form action="<?php echo U(MODULE_NAME.'/Category/runAddCate');?>" method="post" accept-charset="utf-8">
+    <table class="table table-bordered table-hover ">
+    	<tr>
+    	   <th><b style="font-size: 20px;">添加分类:</b></th>
+    	</tr>
+        <tr>
+        	<td align="right">分类名称:</td>
+        	<td><input type="text" name="cname" value="" placeholder="在这里输入名称"></td>
+        </tr>
+        <tr>
+        	<td align="right">分类关键字:</td>
+        	<td><input type="text" name="keywords" value="" placeholder="在这里输入关键字"></td>
+        </tr>
+        <tr>
+        	<td align="right">分类标题:</td>
+        	<td><input type="text" name="title" value="" placeholder="在这里输入标题">
+        </tr>
+        <tr>
+        	<td align="right">分类排序:</td>
+        	<td><input type="text" name="sort" value="" placeholder="10">
+        	<input type="hidden" name="pid" value="<?php echo ($pid); ?>">
+        	</td>
+        </tr>
+        <tr>
+          <td align="right">是否显示:</td>
+          <td>显示
+          <input type="radio" name="display" checked="checked" value="0">&nbsp;&nbsp;
+          不显示
+          <input type="radio" name="display" value="1">
+          </td>
+        </tr>
+    </table>
+    <p style="font-size: 15px;">分类描述:</p>
+    <textarea name="description" id="content"></textarea>
+    <p align="center"><input type="submit" value="保存添加" class="btn btn-primary" style="margin:10px"></p>
+</form>
+
+
+</body>
+</html>

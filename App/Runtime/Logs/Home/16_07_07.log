@@ -1,0 +1,573 @@
+[ 2016-07-07T14:20:07+08:00 ] ::1 /group/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.1560s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SELECT `pid` FROM `gr_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0370s ]
+SQL: SELECT `pid` FROM `gr_locality` WHERE `lid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `lid`,`lname` FROM `gr_locality` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SELECT `lid`,`lname` FROM `gr_locality` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SELECT `pid` FROM `gr_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index:  C:\WWW\group\App\Home\Controller\IndexController.class.php 第 253 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\WWW\group\App\Home\Controller\IndexController.class.php 第 261 行.
+SQL: SELECT `cid` FROM `gr_category` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `lid` FROM `gr_locality` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `gr_shop` [ RunTime:0.0520s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0100s ]
+SQL: SELECT goods.lid AS lid,goods.cid AS cid,category.cid AS cid,category.pid AS pid,locality.lid AS lid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid WHERE goods.cid IN ('1','2','5','') AND goods.lid IN ('1','5','6','') AND goods.price > 0 LIMIT 1   [ RunTime:0.0440s ]
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.price AS price,goods.old_price AS old_price,goods.sub_title AS sub_title,goods.goods_img AS goods_img,category.cid AS cid,shop.shopid AS shopid,locality.lid AS lid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid WHERE goods.cid IN ('1','2','5','') AND goods.lid IN ('1','5','6','') ORDER BY begin_time desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.007001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.008001s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 92 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.331019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.331019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.018001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018001s ]
+
+[ 2016-07-07T14:20:11+08:00 ] ::1 /group/index.php/Home/Index/index/cid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0090s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SELECT `pid` FROM `gr_category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0020s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 1 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0110s ]
+SQL: SELECT `pid` FROM `gr_locality` WHERE `lid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `lid`,`lname` FROM `gr_locality` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SELECT `lid`,`lname` FROM `gr_locality` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SELECT `pid` FROM `gr_category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cid` FROM `gr_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `lid` FROM `gr_locality` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `gr_shop` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0080s ]
+SQL: SELECT goods.lid AS lid,goods.cid AS cid,category.cid AS cid,category.pid AS pid,locality.lid AS lid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid WHERE goods.cid IN ('3','4',1) AND goods.lid IN ('1','5','6','') AND goods.price > 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: url C:\WWW\group\App\Classlib\Page.class.php 第 86 行.
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.price AS price,goods.old_price AS old_price,goods.sub_title AS sub_title,goods.goods_img AS goods_img,category.cid AS cid,shop.shopid AS shopid,locality.lid AS lid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid WHERE goods.cid IN ('3','4',1) AND goods.lid IN ('1','5','6','') ORDER BY begin_time desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.008000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.008000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 92 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.222013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.222013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-07-07T14:20:12+08:00 ] ::1 /group/index.php/Home/Index/index/cid/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0100s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SELECT `pid` FROM `gr_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0100s ]
+SQL: SELECT `pid` FROM `gr_locality` WHERE `lid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `lid`,`lname` FROM `gr_locality` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SELECT `lid`,`lname` FROM `gr_locality` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `gr_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 C:\WWW\group\App\Home\Controller\IndexController.class.php 第 253 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\WWW\group\App\Home\Controller\IndexController.class.php 第 261 行.
+SQL: SELECT `cid` FROM `gr_category` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `lid` FROM `gr_locality` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `gr_shop` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0090s ]
+SQL: SELECT goods.lid AS lid,goods.cid AS cid,category.cid AS cid,category.pid AS pid,locality.lid AS lid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid WHERE goods.cid IN ('1','2','5',0) AND goods.lid IN ('1','5','6','') AND goods.price > 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: url C:\WWW\group\App\Classlib\Page.class.php 第 86 行.
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.price AS price,goods.old_price AS old_price,goods.sub_title AS sub_title,goods.goods_img AS goods_img,category.cid AS cid,shop.shopid AS shopid,locality.lid AS lid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid WHERE goods.cid IN ('1','2','5',0) AND goods.lid IN ('1','5','6','') ORDER BY begin_time desc LIMIT 0,10   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.008001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.009001s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 92 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.274016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.274016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2016-07-07T14:20:13+08:00 ] ::1 /group/index.php/Home/Index/index/cid/1/lid/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0090s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `gr_category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 1 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0110s ]
+SQL: SELECT `pid` FROM `gr_locality` WHERE `lid` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `lid`,`lname` FROM `gr_locality` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SELECT `lid`,`lname` FROM `gr_locality` WHERE `pid` = 6 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SELECT `pid` FROM `gr_category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `cid` FROM `gr_category` WHERE `pid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `lid` FROM `gr_locality` WHERE `pid` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `gr_shop` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0080s ]
+SQL: SELECT goods.lid AS lid,goods.cid AS cid,category.cid AS cid,category.pid AS pid,locality.lid AS lid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid WHERE goods.cid IN ('3','4',1) AND goods.lid IN ('7',6) AND goods.price > 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: url C:\WWW\group\App\Classlib\Page.class.php 第 86 行.
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.price AS price,goods.old_price AS old_price,goods.sub_title AS sub_title,goods.goods_img AS goods_img,category.cid AS cid,shop.shopid AS shopid,locality.lid AS lid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid WHERE goods.cid IN ('3','4',1) AND goods.lid IN ('7',6) ORDER BY begin_time desc LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: main_title C:\WWW\group\App\Home\Controller\IndexController.class.php 第 57 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.008000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.008000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 92 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 93 行.
+NOTIC: [8] Undefined index: buy C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.207012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.207012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-07-07T14:20:14+08:00 ] ::1 /group/index.php/Home/Index/index/cid/1/lid/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0090s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SELECT `pid` FROM `gr_category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 1 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0090s ]
+SQL: SELECT `pid` FROM `gr_locality` WHERE `lid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `lid`,`lname` FROM `gr_locality` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SELECT `lid`,`lname` FROM `gr_locality` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `gr_category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cid` FROM `gr_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `lid` FROM `gr_locality` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `gr_shop` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0120s ]
+SQL: SELECT goods.lid AS lid,goods.cid AS cid,category.cid AS cid,category.pid AS pid,locality.lid AS lid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid WHERE goods.cid IN ('3','4',1) AND goods.lid IN ('1','5','6',0) AND goods.price > 0 LIMIT 1   [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: url C:\WWW\group\App\Classlib\Page.class.php 第 86 行.
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.price AS price,goods.old_price AS old_price,goods.sub_title AS sub_title,goods.goods_img AS goods_img,category.cid AS cid,shop.shopid AS shopid,locality.lid AS lid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid WHERE goods.cid IN ('3','4',1) AND goods.lid IN ('1','5','6',0) ORDER BY begin_time desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.009000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.009000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 92 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.235014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.236014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2016-07-07T14:20:16+08:00 ] ::1 /group/index.php/Home/Detail/index/gid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0090s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `gr_shop` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `gr_goods_detail` [ RunTime:0.0340s ]
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.main_title AS main_title,goods.sub_title AS sub_title,goods.price AS price,goods.old_price AS old_price,goods.buy AS buy,goods.goods_img AS goods_img,category.cid AS cid,category.cname AS cname,category.keywords AS keywords,category.title AS title,category.description AS description,category.sort AS sort,category.display AS display,category.pid AS pid,shop.shopid AS shopid,shop.shopname AS shopname,shop.shopaddress AS shopaddress,shop.metroaddress AS metroaddress,shop.shoptel AS shoptel,shop.shopcoord AS shopcoord,locality.lid AS lid,locality.lname AS lname,goods_detail.goods_id AS goods_id,goods_detail.goods_server AS goods_server,goods_detail.detail AS detail FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.gid = 4 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: end_time C:\WWW\group\App\Home\Controller\DetailController.class.php 第 44 行.
+SQL: SELECT goods.cid AS cid,category.cid AS cid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.gid = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.main_title AS main_title,goods.sub_title AS sub_title,goods.price AS price,goods.old_price AS old_price,goods.buy AS buy,goods.goods_img AS goods_img,category.cid AS cid,category.cname AS cname,category.keywords AS keywords,category.title AS title,category.description AS description,category.sort AS sort,category.display AS display,category.pid AS pid,shop.shopid AS shopid,shop.shopname AS shopname,shop.shopaddress AS shopaddress,shop.metroaddress AS metroaddress,shop.shoptel AS shoptel,shop.shopcoord AS shopcoord,locality.lid AS lid,locality.lname AS lname,goods_detail.goods_id AS goods_id,goods_detail.goods_server AS goods_server,goods_detail.detail AS detail FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.cid = '1' ORDER BY goods.buy desc LIMIT 5   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 93 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 135 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.146009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.146009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-07-07T14:20:17+08:00 ] ::1 /group/index.php/Home/Detail/index/gid/Public/images/goods.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T14:20:17+08:00 ] ::1 /group/index.php/Home/Detail/index/gid/css/detail.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0120s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `gr_shop` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `gr_goods_detail` [ RunTime:0.0080s ]
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.main_title AS main_title,goods.sub_title AS sub_title,goods.price AS price,goods.old_price AS old_price,goods.buy AS buy,goods.goods_img AS goods_img,category.cid AS cid,category.cname AS cname,category.keywords AS keywords,category.title AS title,category.description AS description,category.sort AS sort,category.display AS display,category.pid AS pid,shop.shopid AS shopid,shop.shopname AS shopname,shop.shopaddress AS shopaddress,shop.metroaddress AS metroaddress,shop.shoptel AS shoptel,shop.shopcoord AS shopcoord,locality.lid AS lid,locality.lname AS lname,goods_detail.goods_id AS goods_id,goods_detail.goods_server AS goods_server,goods_detail.detail AS detail FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.gid = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: goods_img C:\WWW\group\App\Home\Controller\DetailController.class.php 第 43 行.
+NOTIC: [8] Undefined index: end_time C:\WWW\group\App\Home\Controller\DetailController.class.php 第 44 行.
+NOTIC: [8] Undefined index: goods_server C:\WWW\group\App\Home\Controller\DetailController.class.php 第 49 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, boolean given C:\WWW\group\App\Home\Controller\DetailController.class.php 第 49 行.
+NOTIC: [8] Undefined index:  C:\WWW\group\App\Home\Controller\DetailController.class.php 第 52 行.
+NOTIC: [8] Undefined index:  C:\WWW\group\App\Home\Controller\DetailController.class.php 第 53 行.
+SQL: SELECT goods.cid AS cid,category.cid AS cid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.gid = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.main_title AS main_title,goods.sub_title AS sub_title,goods.price AS price,goods.old_price AS old_price,goods.buy AS buy,goods.goods_img AS goods_img,category.cid AS cid,category.cname AS cname,category.keywords AS keywords,category.title AS title,category.description AS description,category.sort AS sort,category.display AS display,category.pid AS pid,shop.shopid AS shopid,shop.shopname AS shopname,shop.shopaddress AS shopaddress,shop.metroaddress AS metroaddress,shop.shoptel AS shoptel,shop.shopcoord AS shopcoord,locality.lid AS lid,locality.lname AS lname,goods_detail.goods_id AS goods_id,goods_detail.goods_server AS goods_server,goods_detail.detail AS detail FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.cid = null ORDER BY goods.buy desc LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 93 行.
+NOTIC: [8] Undefined index: lid C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 121 行.
+NOTIC: [8] Undefined index: lname C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 121 行.
+NOTIC: [8] Undefined index: cid C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 121 行.
+NOTIC: [8] Undefined index: cname C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 121 行.
+NOTIC: [8] Undefined index: shopname C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 121 行.
+NOTIC: [8] Undefined index: main_title C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 126 行.
+NOTIC: [8] Undefined index: sub_title C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 127 行.
+NOTIC: [8] Undefined index: price C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 132 行.
+NOTIC: [8] Undefined index: old_price C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 133 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 135 行.
+NOTIC: [8] Undefined index: gid C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 135 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 136 行.
+NOTIC: [8] Undefined index: gid C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 136 行.
+NOTIC: [8] Undefined index: buy C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 138 行.
+NOTIC: [8] Undefined index: shopname C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 165 行.
+NOTIC: [8] Undefined index: shopaddress C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 168 行.
+NOTIC: [8] Undefined index: metroaddress C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 172 行.
+NOTIC: [8] Undefined index: shoptel C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 176 行.
+NOTIC: [8] Undefined index: detail C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 181 行.
+NOTIC: [8] Undefined index: shopcoord C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.136008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-07-07T14:20:17+08:00 ] ::1 /group/index.php/Home/Detail/index/gid/Public/images/goods.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-07T14:22:54+08:00 ] ::1 /group/index.php/Home/Detail/index/gid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0090s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `gr_shop` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `gr_goods_detail` [ RunTime:0.0070s ]
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.main_title AS main_title,goods.sub_title AS sub_title,goods.price AS price,goods.old_price AS old_price,goods.buy AS buy,goods.goods_img AS goods_img,category.cid AS cid,category.cname AS cname,category.keywords AS keywords,category.title AS title,category.description AS description,category.sort AS sort,category.display AS display,category.pid AS pid,shop.shopid AS shopid,shop.shopname AS shopname,shop.shopaddress AS shopaddress,shop.metroaddress AS metroaddress,shop.shoptel AS shoptel,shop.shopcoord AS shopcoord,locality.lid AS lid,locality.lname AS lname,goods_detail.goods_id AS goods_id,goods_detail.goods_server AS goods_server,goods_detail.detail AS detail FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.gid = 4 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: end_time C:\WWW\group\App\Home\Controller\DetailController.class.php 第 44 行.
+SQL: SELECT goods.cid AS cid,category.cid AS cid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.gid = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.main_title AS main_title,goods.sub_title AS sub_title,goods.price AS price,goods.old_price AS old_price,goods.buy AS buy,goods.goods_img AS goods_img,category.cid AS cid,category.cname AS cname,category.keywords AS keywords,category.title AS title,category.description AS description,category.sort AS sort,category.display AS display,category.pid AS pid,shop.shopid AS shopid,shop.shopname AS shopname,shop.shopaddress AS shopaddress,shop.metroaddress AS metroaddress,shop.shoptel AS shoptel,shop.shopcoord AS shopcoord,locality.lid AS lid,locality.lname AS lname,goods_detail.goods_id AS goods_id,goods_detail.goods_server AS goods_server,goods_detail.detail AS detail FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.cid = '1' ORDER BY goods.buy desc LIMIT 5   [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 93 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 135 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.118007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-07-07T14:22:57+08:00 ] ::1 /group/index.php/Home/Detail/index/gid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0090s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `gr_shop` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `gr_goods_detail` [ RunTime:0.0090s ]
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.main_title AS main_title,goods.sub_title AS sub_title,goods.price AS price,goods.old_price AS old_price,goods.buy AS buy,goods.goods_img AS goods_img,category.cid AS cid,category.cname AS cname,category.keywords AS keywords,category.title AS title,category.description AS description,category.sort AS sort,category.display AS display,category.pid AS pid,shop.shopid AS shopid,shop.shopname AS shopname,shop.shopaddress AS shopaddress,shop.metroaddress AS metroaddress,shop.shoptel AS shoptel,shop.shopcoord AS shopcoord,locality.lid AS lid,locality.lname AS lname,goods_detail.goods_id AS goods_id,goods_detail.goods_server AS goods_server,goods_detail.detail AS detail FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.gid = 4 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: end_time C:\WWW\group\App\Home\Controller\DetailController.class.php 第 44 行.
+SQL: SELECT goods.cid AS cid,category.cid AS cid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.gid = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.main_title AS main_title,goods.sub_title AS sub_title,goods.price AS price,goods.old_price AS old_price,goods.buy AS buy,goods.goods_img AS goods_img,category.cid AS cid,category.cname AS cname,category.keywords AS keywords,category.title AS title,category.description AS description,category.sort AS sort,category.display AS display,category.pid AS pid,shop.shopid AS shopid,shop.shopname AS shopname,shop.shopaddress AS shopaddress,shop.metroaddress AS metroaddress,shop.shoptel AS shoptel,shop.shopcoord AS shopcoord,locality.lid AS lid,locality.lname AS lname,goods_detail.goods_id AS goods_id,goods_detail.goods_server AS goods_server,goods_detail.detail AS detail FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.cid = '1' ORDER BY goods.buy desc LIMIT 5   [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 93 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 135 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.075004s ]
+
+[ 2016-07-07T14:22:57+08:00 ] ::1 /group/index.php/Home/Detail/index/gid/css/detail.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0070s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `gr_shop` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `gr_goods_detail` [ RunTime:0.0090s ]
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.main_title AS main_title,goods.sub_title AS sub_title,goods.price AS price,goods.old_price AS old_price,goods.buy AS buy,goods.goods_img AS goods_img,category.cid AS cid,category.cname AS cname,category.keywords AS keywords,category.title AS title,category.description AS description,category.sort AS sort,category.display AS display,category.pid AS pid,shop.shopid AS shopid,shop.shopname AS shopname,shop.shopaddress AS shopaddress,shop.metroaddress AS metroaddress,shop.shoptel AS shoptel,shop.shopcoord AS shopcoord,locality.lid AS lid,locality.lname AS lname,goods_detail.goods_id AS goods_id,goods_detail.goods_server AS goods_server,goods_detail.detail AS detail FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.gid = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: goods_img C:\WWW\group\App\Home\Controller\DetailController.class.php 第 43 行.
+NOTIC: [8] Undefined index: end_time C:\WWW\group\App\Home\Controller\DetailController.class.php 第 44 行.
+NOTIC: [8] Undefined index: goods_server C:\WWW\group\App\Home\Controller\DetailController.class.php 第 49 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, boolean given C:\WWW\group\App\Home\Controller\DetailController.class.php 第 49 行.
+NOTIC: [8] Undefined index:  C:\WWW\group\App\Home\Controller\DetailController.class.php 第 52 行.
+NOTIC: [8] Undefined index:  C:\WWW\group\App\Home\Controller\DetailController.class.php 第 53 行.
+SQL: SELECT goods.cid AS cid,category.cid AS cid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.gid = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.main_title AS main_title,goods.sub_title AS sub_title,goods.price AS price,goods.old_price AS old_price,goods.buy AS buy,goods.goods_img AS goods_img,category.cid AS cid,category.cname AS cname,category.keywords AS keywords,category.title AS title,category.description AS description,category.sort AS sort,category.display AS display,category.pid AS pid,shop.shopid AS shopid,shop.shopname AS shopname,shop.shopaddress AS shopaddress,shop.metroaddress AS metroaddress,shop.shoptel AS shoptel,shop.shopcoord AS shopcoord,locality.lid AS lid,locality.lname AS lname,goods_detail.goods_id AS goods_id,goods_detail.goods_server AS goods_server,goods_detail.detail AS detail FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.cid = null ORDER BY goods.buy desc LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 93 行.
+NOTIC: [8] Undefined index: lid C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 121 行.
+NOTIC: [8] Undefined index: lname C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 121 行.
+NOTIC: [8] Undefined index: cid C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 121 行.
+NOTIC: [8] Undefined index: cname C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 121 行.
+NOTIC: [8] Undefined index: shopname C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 121 行.
+NOTIC: [8] Undefined index: main_title C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 126 行.
+NOTIC: [8] Undefined index: sub_title C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 127 行.
+NOTIC: [8] Undefined index: price C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 132 行.
+NOTIC: [8] Undefined index: old_price C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 133 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 135 行.
+NOTIC: [8] Undefined index: gid C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 135 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 136 行.
+NOTIC: [8] Undefined index: gid C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 136 行.
+NOTIC: [8] Undefined index: buy C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 138 行.
+NOTIC: [8] Undefined index: shopname C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 165 行.
+NOTIC: [8] Undefined index: shopaddress C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 168 行.
+NOTIC: [8] Undefined index: metroaddress C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 172 行.
+NOTIC: [8] Undefined index: shoptel C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 176 行.
+NOTIC: [8] Undefined index: detail C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 181 行.
+NOTIC: [8] Undefined index: shopcoord C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.245014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.245014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-07T14:22:57+08:00 ] ::1 /group/index.php/Home/Detail/index/gid/Public/images/goods.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T15:26:22+08:00 ] ::1 /group/index.php/Home/Detail/index/gid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0140s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `gr_shop` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `gr_goods_detail` [ RunTime:0.0090s ]
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.main_title AS main_title,goods.sub_title AS sub_title,goods.price AS price,goods.old_price AS old_price,goods.buy AS buy,goods.goods_img AS goods_img,category.cid AS cid,category.cname AS cname,category.keywords AS keywords,category.title AS title,category.description AS description,category.sort AS sort,category.display AS display,category.pid AS pid,shop.shopid AS shopid,shop.shopname AS shopname,shop.shopaddress AS shopaddress,shop.metroaddress AS metroaddress,shop.shoptel AS shoptel,shop.shopcoord AS shopcoord,locality.lid AS lid,locality.lname AS lname,goods_detail.goods_id AS goods_id,goods_detail.goods_server AS goods_server,goods_detail.detail AS detail FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.gid = 4 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: end_time C:\WWW\group\App\Home\Controller\DetailController.class.php 第 44 行.
+SQL: SELECT goods.cid AS cid,category.cid AS cid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.gid = 4 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.main_title AS main_title,goods.sub_title AS sub_title,goods.price AS price,goods.old_price AS old_price,goods.buy AS buy,goods.goods_img AS goods_img,category.cid AS cid,category.cname AS cname,category.keywords AS keywords,category.title AS title,category.description AS description,category.sort AS sort,category.display AS display,category.pid AS pid,shop.shopid AS shopid,shop.shopname AS shopname,shop.shopaddress AS shopaddress,shop.metroaddress AS metroaddress,shop.shoptel AS shoptel,shop.shopcoord AS shopcoord,locality.lid AS lid,locality.lname AS lname,goods_detail.goods_id AS goods_id,goods_detail.goods_server AS goods_server,goods_detail.detail AS detail FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.cid = '1' ORDER BY goods.buy desc LIMIT 5   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 93 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 135 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.142009s ]
+
+[ 2016-07-07T15:26:23+08:00 ] ::1 /group/index.php/Home/Detail/index/gid/css/detail.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0110s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `gr_shop` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `gr_goods_detail` [ RunTime:0.0100s ]
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.main_title AS main_title,goods.sub_title AS sub_title,goods.price AS price,goods.old_price AS old_price,goods.buy AS buy,goods.goods_img AS goods_img,category.cid AS cid,category.cname AS cname,category.keywords AS keywords,category.title AS title,category.description AS description,category.sort AS sort,category.display AS display,category.pid AS pid,shop.shopid AS shopid,shop.shopname AS shopname,shop.shopaddress AS shopaddress,shop.metroaddress AS metroaddress,shop.shoptel AS shoptel,shop.shopcoord AS shopcoord,locality.lid AS lid,locality.lname AS lname,goods_detail.goods_id AS goods_id,goods_detail.goods_server AS goods_server,goods_detail.detail AS detail FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.gid = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: goods_img C:\WWW\group\App\Home\Controller\DetailController.class.php 第 43 行.
+NOTIC: [8] Undefined index: end_time C:\WWW\group\App\Home\Controller\DetailController.class.php 第 44 行.
+NOTIC: [8] Undefined index: goods_server C:\WWW\group\App\Home\Controller\DetailController.class.php 第 49 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, boolean given C:\WWW\group\App\Home\Controller\DetailController.class.php 第 49 行.
+NOTIC: [8] Undefined index:  C:\WWW\group\App\Home\Controller\DetailController.class.php 第 52 行.
+NOTIC: [8] Undefined index:  C:\WWW\group\App\Home\Controller\DetailController.class.php 第 53 行.
+SQL: SELECT goods.cid AS cid,category.cid AS cid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.gid = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.main_title AS main_title,goods.sub_title AS sub_title,goods.price AS price,goods.old_price AS old_price,goods.buy AS buy,goods.goods_img AS goods_img,category.cid AS cid,category.cname AS cname,category.keywords AS keywords,category.title AS title,category.description AS description,category.sort AS sort,category.display AS display,category.pid AS pid,shop.shopid AS shopid,shop.shopname AS shopname,shop.shopaddress AS shopaddress,shop.metroaddress AS metroaddress,shop.shoptel AS shoptel,shop.shopcoord AS shopcoord,locality.lid AS lid,locality.lname AS lname,goods_detail.goods_id AS goods_id,goods_detail.goods_server AS goods_server,goods_detail.detail AS detail FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  JOIN gr_goods_detail goods_detail ON goods.gid = goods_detail.goods_id WHERE goods.cid = null ORDER BY goods.buy desc LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 92 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 93 行.
+NOTIC: [8] Undefined index: lid C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 121 行.
+NOTIC: [8] Undefined index: lname C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 121 行.
+NOTIC: [8] Undefined index: cid C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 121 行.
+NOTIC: [8] Undefined index: cname C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 121 行.
+NOTIC: [8] Undefined index: shopname C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 121 行.
+NOTIC: [8] Undefined index: main_title C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 126 行.
+NOTIC: [8] Undefined index: sub_title C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 127 行.
+NOTIC: [8] Undefined index: price C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 132 行.
+NOTIC: [8] Undefined index: old_price C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 133 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 135 行.
+NOTIC: [8] Undefined index: gid C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 135 行.
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 136 行.
+NOTIC: [8] Undefined index: gid C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 136 行.
+NOTIC: [8] Undefined index: buy C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 138 行.
+NOTIC: [8] Undefined index: shopname C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 165 行.
+NOTIC: [8] Undefined index: shopaddress C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 168 行.
+NOTIC: [8] Undefined index: metroaddress C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 172 行.
+NOTIC: [8] Undefined index: shoptel C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 176 行.
+NOTIC: [8] Undefined index: detail C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 181 行.
+NOTIC: [8] Undefined index: shopcoord C:\WWW\group\App\Runtime\Cache\Home\7f7445a42b50be6d66b1c759e6ea50e0.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.189010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.189010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.028001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.028001s ]
+
+[ 2016-07-07T15:26:23+08:00 ] ::1 /group/index.php/Home/Detail/index/gid/Public/images/goods.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+

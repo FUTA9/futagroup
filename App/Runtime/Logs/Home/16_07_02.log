@@ -1,0 +1,41 @@
+[ 2016-07-02T09:58:17+08:00 ] ::1 /group/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020000s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0400s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `gr_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SELECT `cid`,`cname` FROM `gr_category` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0400s ]
+SQL: SELECT `pid` FROM `gr_locality` WHERE `lid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `lid`,`lname` FROM `gr_locality` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SELECT `lid`,`lname` FROM `gr_locality` WHERE `pid` = 0 AND `display` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `gr_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index:  C:\WWW\group\App\Home\Controller\IndexController.class.php 第 259 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\WWW\group\App\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT `cid` FROM `gr_category` WHERE `pid` = 0  [ RunTime:0.0100s ]
+SQL: SELECT `lid` FROM `gr_locality` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `gr_goods` [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `gr_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `gr_shop` [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `gr_locality` [ RunTime:0.0100s ]
+SQL: SELECT goods.lid AS lid,goods.cid AS cid,category.cid AS cid,category.pid AS pid,locality.lid AS lid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid WHERE goods.cid IN ('1','2','5','') AND goods.lid IN ('1','5','6','') AND goods.price > 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT goods.gid AS gid,goods.cid AS cid,goods.lid AS lid,goods.price AS price,goods.old_price AS old_price,goods.sub_title AS sub_title,goods.goods_img AS goods_img,category.cid AS cid,shop.shopid AS shopid,locality.lid AS lid FROM gr_goods goods INNER JOIN gr_category category ON goods.cid = category.cid INNER JOIN gr_shop shop ON goods.shopid = shop.shopid INNER JOIN gr_locality locality ON goods.lid = locality.lid WHERE goods.cid IN ('1','2','5','') AND goods.lid IN ('1','5','6','') ORDER BY begin_time desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017001s ]
+
